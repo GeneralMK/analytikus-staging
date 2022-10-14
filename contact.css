@@ -19,7 +19,7 @@ height: 60px;
 padding:22px 25px;
 
 position: fixed;
-background-color:#0077b6;
+background:linear-gradient(206.34deg, #158AFF -4.95%, #1F4CC8 56.86%, #6100D0 145.99%);
 
 margin-top:5%;
 margin-left:2%;
@@ -46,7 +46,7 @@ align-items: center;
       width:100%;
       height:100vh;
 
-      background-color:#0077b6;
+      background-color:#1F4CC8;
       z-index: 9;
       transform: scale(0);
       transform-origin: top left;
@@ -248,7 +248,10 @@ top:60%;
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
 }
+#form-message{
+  resize: none;
 
+}
 .mask span[data-show] {
   transform: translateY(-100%);
   transition: .5s transform ease-in-out;
@@ -300,7 +303,7 @@ margin-right: 4rem;
 .greeting-div .fa-circle
 {
   font-size: 1rem;
-  color: #0077b6;
+  color:  #1F4CC8 ;
 }
 .hi-div{
   font-size: 1.5rem;
@@ -452,7 +455,7 @@ padding-left:4rem;
 }
 .footer-circle .fa-circle{
   font-size: 120rem;
-  color: #0077b6;
+  color: #1F4CC8;
   position: absolute;
   left:50%;
   bottom:-110%;
@@ -596,9 +599,48 @@ padding-left:4rem;
     display: none;
   }
 
-  .modal-dialog-slideout, button{
-    position: absolute;
-  
-    max-width: 100%;
+  .link-button{
+    width: 100%;
+
+  }
+
+  .modal-dialog {
+    max-width: 190%;
+  }
+  .modal-dialog-slideout {
+    min-height: 100%;
+    margin: 0 0 0 auto;
+    background: #fff;
+  }
+  .modal.fade .modal-dialog.modal-dialog-slideout {
+    -webkit-transform: translate(100%, 0)scale(1);
+    transform: translate(100%, 0)scale(1);
+  }
+  .modal.fade.show .modal-dialog.modal-dialog-slideout {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    display: flex;
+    align-items: stretch;
+    -webkit-box-align: stretch;
+    height: 100%;
+  }
+  .modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .modal-dialog-slideout .modal-content {
+    border: 0;
+  }
+  .modal-dialog-slideout .modal-header,
+  .modal-dialog-slideout .modal-footer {
+    height: 1rem;
+    
+  }
+ 
+  .modal-body{
+    width: 11rem;
+  }
+  .modal-footer{
+    display: none;
   }
 }
