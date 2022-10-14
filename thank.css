@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+body
+{
+    text-align: center;
+    font-family: serif;
+    font-size: 59px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: azure;
+}
+
+
+a{
+    color: white;
+    font-style: italic;
+}
+
+a:hover{
+    color: black;
+    font-style: italic;
+}

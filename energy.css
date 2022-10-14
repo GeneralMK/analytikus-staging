@@ -1,0 +1,202 @@
+body {
+	margin: 0;
+	font: normal 75% Arial, Helvetica, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    
+      background-color: #f8f9fa;
+
+
+}
+header{
+    height: 100vh;
+}
+.toggleBtn{
+    display: inline-block;
+  width: 55px;
+  height: 55px;
+  padding:22px 25px;
+  
+  position: fixed;
+  background-color:#003459;
+  
+  margin-top:5%;
+  margin-left:2%;
+  z-index: 99999;
+  border-radius:50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all .8s ease;
+      }
+      .menu-icon, .close-icon{
+        filter: brightness(0) invert(1);
+      }
+  .toggleBtn img{
+    position: absolute;
+  }
+  .toggleBtn img.close-icon{
+  opacity: 0;
+  }
+  .menu-icon, .close-icon{
+    filter: brightness(0) invert(1);
+  }
+  .menu{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+  
+    background-color:#003459;
+    z-index: 999;
+    transform: scale(0);
+    transform-origin: top left;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+  }
+  nav{
+    padding: 100px;
+    transition: all ease .8s;
+  }
+  nav ul{
+    padding-left: 0;
+  }
+  nav ul li{
+    list-style: none;
+    margin-bottom:30px;
+    color:#e0e1df;;
+  }
+  nav ul li a{
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color:#e0e1df;;
+  }
+  .brand{
+    position: absolute;
+    width: 14%;
+    top:4%;
+    z-index: 99999;
+    right: 4%;
+    
+  }
+  .brand img{
+    width: 100%;
+    position: absolute;
+    z-index: 999999;
+  /*filter:brightness(30%) saturate(10%); */
+    object-fit: contain;
+  }
+  .header-content{
+
+    width:85%; position: absolute;
+ left:0;
+    top:20%;
+    padding:60px;
+}
+
+#button {
+	position: absolute;
+	color: #1d1d1d;
+	z-index: 999;
+	top: 25%;
+	left: 4%;
+  width: 65%;
+	font-size: 200px;
+  text-align: left;
+
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: font-size 0.3s ease-out, color 4s linear;
+  font-family: 'Noto Sans', sans-serif;
+}
+.brief{
+    width: 35%;
+    font-size: 1rem;
+    position: absolute;
+    bottom:0;
+    right:4%;
+    line-height: 1.88rem;
+}
+.intro-wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.p-wrapper{
+    width: 80%;
+    padding-left: 3rem;
+    position: relative;
+    top:-8vh;
+  }
+  .p-wrapper p{
+    font-size: 40px;
+    line-height: 3.55rem;
+    font-family: 'Noto Sans', sans-serif;
+   
+  }
+  .small{
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .technology{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      flex-direction: column;
+  }
+  .technology img{
+      width: 100%;
+      object-fit: cover;
+  }
+  .container {width: 100%; height: 100%;}
+.item-container {display: flex; padding: 100px 10%; align-items: top; position: relative; justify-content: flex-end}
+.left, .right {padding: 0 20px}
+.left {width: 30%; position: absolute; left: 5%; font-size: 48px; font-weight: bold}
+.rigth {width: 70%}
+
+.item-d {height: 600px; text-align: center; justify-content: center}
+
+.rigth{ font-size: 1.2rem; line-height: 1.88rem;
+}
+main:after {
+    animation: grain 20s steps(10) infinite;
+    background-image: url(https://media.istockphoto.com/vectors/noise-pattern-seamless-grunge-texture-white-paper-vector-vector-id957053842?k=6&m=957053842&s=612x612&w=0&h=gMlueRpHozbKs1L2d1szbcQuoqXZMVKKUbeSjS4ZtPg=);
+    content: "";
+    height: 300%;
+    left: -50%;
+    opacity: 0.1;
+    position: fixed;
+    top: -110%;
+    width: 300%;
+    z-index: 1;
+  }
+  
+  @keyframes grain {
+    0%, 100% { transform:translate(0, 0) }
+    10% { transform:translate(-5%, -10%) }
+    20% { transform:translate(-15%, 5%) }
+    30% { transform:translate(7%, -25%) }
+    40% { transform:translate(-5%, 25%) }
+    50% { transform:translate(-15%, 10%) }
+    60% { transform:translate(15%, 0%) }
+    70% { transform:translate(0%, 15%) }
+    80% { transform:translate(3%, 35%) }
+    90% { transform:translate(-10%, 10%) }
+  }
+.form-wrapper{
+    height: 100%;
+}
