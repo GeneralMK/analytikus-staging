@@ -1876,7 +1876,9 @@ padding-left:4rem;
   font-size: 1.2rem;
  
 }
-
+.wrapper, .address-wrapper{
+  z-index: 9;
+}
 address{
   color: grey;
 }
