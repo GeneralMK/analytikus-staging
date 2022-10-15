@@ -46,12 +46,30 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
         </div>
           
   <!-- particles.js container --> 
-  <div id="particles-js"></div>  
-  
+  <!-- <div id="particles-js"></div>   -->
+  <!-- <div id="preloader">
+    <div class="p">LOADING</div>
+  </div> -->
+
   <div class="toggleBtn fixed-top">
     <img class="menu-icon" src="./images/menu_open.png" width="40"/>
     <img class="close-icon" src="./images/menu_close.png" width="30"/>
   </div>
+  <gradient-container>
+    <gradient-color></gradient-color>
+    <gradient-color></gradient-color>
+    <gradient-color></gradient-color>
+    <gradient-color></gradient-color>
+    <gradient-backdrop></gradient-backdrop>
+  </gradient-container>
+
+  <gradient-container class="gradient2">
+    <gradient-color></gradient-color>
+    <gradient-color></gradient-color>
+    <gradient-color></gradient-color>
+    <gradient-color></gradient-color>
+    <gradient-backdrop></gradient-backdrop>
+  </gradient-container>
   <div class="menu">
     <nav>
       <ul>
@@ -108,85 +126,101 @@ href="https://unpkg.com/swiper/swiper-bundle.min.css"
  <div class="office-wrapper reveal">
 
  </div>
- <div class="revealUp">
+ <div class="revealDown">
 <span>Office</span>
 <div class="office">
-  <p>Infinity Business Park</p>
-  <p>Johannesburg</p>
 </div>
-<div>
-  <address>
+<div class="location-wrapper">
+  <address >
     4 Pieter Wenning Rd<br>
     Fourways<br>
     Sandton<br>
     2191<br>
  
     </address>
+    <p>T +27 11 293 3032</p>
+    <p></p>
+    <a href="https://goo.gl/maps/vWUrypZ7kgz8Uzpj8" class="link link-button" >Get Directions</a>
+    
 </div>
+
  </div>
 
  </section>
 </main>
-<section class="footer">
-  <span class="footer-circle "><i class="fas fa-circle"></i></span>
-  <div class="connected revealUp">
-    <h2>Stay connected</h2>
-    <p>
-      Send us an enquiry and we will get back to you as soon as possible
-    </p>
-    <div  class="btn-wrapper" >
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalSlide">Contact Us</button>
-    
+<footer class="footer">
+  <div class="footer-wrapper">
+
+    <div class="wrapper">
+      <h3>
+        WE WOULD LOVE TO HEAR FROM YOU.
+      </h3>
+      <p>
+        Feel free to react out if you want to collaborate  with us, dont hesitate to say Hi
+      </p>
+
+      <h4>
+        office@analytikus.co.za
+      </h4>
     </div>
+   
+ 
   </div>
-  <div class="links">
-    <ul>
-      <li><a href="">&copy ANALYTIKUS PTY LTD 2022</a></li>
-      <li><a href="">FACEBOOK</a></li>
-      <li><a href="">TERMS & CONDITIONS</a></li>
-      <li><a href=""><img src="./Analytikus - Vertical Logo (Colour)-01.png" alt=""></a></li>
-    </ul>
+  <div class="address-wrapper">
+   <div>
+    <h6>OUR ADDRESS</h6>
+    <address>
+      4 Pieter Wenning Rd<br>
+      Fourways<br>
+      Sandton<br>
+      2191<br>
+   
+      </address>
+
+   </div>
+   <div>
+    <h6>FOLLOW US</h6>
+    <div class="pagesLink">
+      <a href="https://instagram.com/analytikus_group?igshid=YmMyMTA2M2Y=">IG</a>
+      <a href="https://www.facebook.com/profile.php?id=100086906703803"> FB</a>
+      <a href="https://www.linkedin.com/company/analytikus-group/"> Ln</a>
+
+    </div>
+   </div>
+   <div class="navigations">
+    <h6>NAVIGATION</h6>
+    <a href="/">Home</a>
+    <a href="./about.html">About Us</a>
+    <a href="./contact.html">Contact Us</a>
   </div>
-  <div class="modal fade" id="ModalSlide" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true" style=" backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);">
-    <div class="modal-dialog modal-dialog-slideout" role="document" style=" backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title align-right" id="exampleModalLabel">Contact Us</h5>
+  </div>
   
-        </div>
-        <div class="modal-body">
-        <form action='' method="POST"  class="email-from" id="contact" enctype="multipart/form-data">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Name</label>
-            <input type="text" class="form-control" name="name" id="name" aria-describedby="nameHelp" placeholder="Your name">
+</footer>
 
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Subject</label>
-            <input type="text" class="form-control" name="sbuject" id="subject" aria-describedby="nameHelp" placeholder="Your Subject">
+<script>
 
-          </div
-          <div class="form-group">
-            <label for="comment">Message:</label>
-            <textarea class="form-control" name="message" rows="5" id="form-message"></textarea>
-          </div>
-          <button type="submit" class="link-button">Submit</button>
-        </form>
-        </div>
-        <!-- <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div> -->
-      </div>
-    </div>
-  </div>
-</section>
+  paceOptions = {
+  ajax: true,
+  document: true,
+  eventLag: false
+  };
+
+  Pace.on('done', function() {
+  $('.p').delay(500).animate({top: '30%', opacity: '0'}, 3000, $.bez([0.19,1,0.22,1]));
+
+
+  $('#preloader').delay(1500).animate({top: '-100%'}, 2000, $.bez([0.19,1,0.22,1]));
+
+  TweenMax.from(".title", 2, {
+       delay: 1.8,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+ });
+
+</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
            <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>

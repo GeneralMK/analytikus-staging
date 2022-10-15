@@ -3,8 +3,9 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden;
+  
   background-color:#e0e1df;
+  overflow-x: hidden;
 }
 html {
   --color: transparent;
@@ -12,6 +13,97 @@ html {
 body{
    background-color:#e0e1df;
 }
+:root {
+  --color-1: #158aff;
+  --color-2: #fffff;
+  --color-3: #6100d0;
+  --color-4: #fffff;
+  --blur: blur(100vw);
+}
+.revealDown{
+  z-index: 5;
+  font-size: 2rem;
+}
+gradient-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: var(--color-2);
+  transform: translate(-50%, -50%);
+  opacity: .8;;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 440px; 
+  height: 440px; 
+  border-radius: 15rem; 
+  background: radial-gradient(77.73% 77.73% at 98.52% 96.25%, #F98BDA 0%, rgba(128, 76, 239, 0.29) 50.52%, rgba(91, 216, 216, 0) 100%), radial-gradient(141.73% 105.23% at 50% -7.16%, #E1F8FF 0%, rgba(160, 198, 255, 0) 50.73%, rgba(162, 147, 255, 0) 100%), radial-gradient(112.27% 48.54% at 1.59% 50%, rgba(255, 130, 227, 0.5) 0%, rgba(255, 123, 234, 0.095) 53.91%, rgba(254, 216, 255, 0) 100%), linear-gradient(153.07deg, #8177F3 6.37%, rgba(255, 230, 166, 0) 83.82%); 
+  background-blend-mode: normal, normal, normal, normal, normal, normal; 
+  filter: blur(50px);
+}
+
+gradient-color {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  border-radius: 30% 80% 75% 40% / 40% 40% 70% 50%;
+  animation-name: animate;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animate {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 60%;
+    transform: scale(2) rotate(0deg) translate(10%, -10%);
+  }
+  100% {
+    border-radius: 88% 10% 22% 58% / 73% 56% 34% 77%;
+    transform: scale(2.5) rotate(150deg) translate(40%, -10%);
+  }
+}
+
+gradient-color:nth-child(1) {
+  background-color: var(--color-1);
+  animation-direction: backwards;
+}
+
+gradient-color:nth-child(2) {
+  background-color: var(--color-2);
+}
+
+gradient-color:nth-child(3) {
+  background-color: var(--color-3);
+  animation-direction: backwards;
+}
+
+gradient-color:nth-child(4) {
+  background-color: var(--color-4);
+}
+.location-wrapper p  address{
+  font-size: 1rem;
+}
+gradient-backdrop {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent;
+  backdrop-filter: var(--blur);
+}
+
+.gradient2{
+  top: 70%;
+  left: 30%;
+}
+
 .toggleBtn{
   display: inline-block;
 width: 60px;
@@ -19,7 +111,7 @@ height: 60px;
 padding:22px 25px;
 
 position: fixed;
-background:linear-gradient(206.34deg, #158AFF -4.95%, #1F4CC8 56.86%, #6100D0 145.99%);
+background:#2b2b2b;
 
 margin-top:5%;
 margin-left:2%;
@@ -39,6 +131,18 @@ align-items: center;
     .toggleBtn img.close-icon{
   opacity: 0;
     }
+
+    @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+    }
     .menu{
       position: fixed;
       top:0;
@@ -54,6 +158,10 @@ align-items: center;
       justify-content: center;
       align-items: left;
       flex-direction: column;
+
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
     }
     nav{
       padding: 100px;
@@ -131,7 +239,7 @@ margin-top: 2rem;
 .fab {
     font-size: 1.4rem;
 }
-main:after {
+/* main:after {
     animation: grain 20s steps(10) infinite;
     background-image: url(https://media.istockphoto.com/vectors/noise-pattern-seamless-grunge-texture-white-paper-vector-vector-id957053842?k=6&m=957053842&s=612x612&w=0&h=gMlueRpHozbKs1L2d1szbcQuoqXZMVKKUbeSjS4ZtPg=);
     content: "";
@@ -142,7 +250,7 @@ main:after {
     top: -110%;
     width: 300%;
     z-index: 1;
-  }
+  } */
   
   @keyframes grain {
     0%, 100% { transform:translate(0, 0) }
@@ -195,6 +303,76 @@ main:after {
  
 
  @media only screen and (max-width: 600px){
+  /* FOOTER SECTION STARTS */
+footer .footer{
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 100%;
+  height: 80vh;
+  background: #1b1b1b;
+  color: white;
+  padding: 1rem;
+}
+footer .footer-wrapper {
+  padding-right: -13rem;
+  
+}
+.wrapper{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-wrapper .wrapper h3{
+  font-size: 1rem;
+  font-weight:500 ;
+  width: 1900%;
+ 
+}
+footer .footer-wrapper .wrapper h4{
+  font-size:1.2rem ;
+}
+
+
+footer .footer-wrapper .wrapper p{
+  font-size: 15px;
+  font-weight:400 ;
+  width: 900%;
+  color: gray;
+  margin-right:  3rem;
+}
+.footer-wrapper .wrapper h4{
+  font-size: 2rem;
+  font-weight:400 ;
+  
+  
+}
+footer .wrapper{
+  padding: 1rem;
+}
+footer .address-wrapper{
+  display: grid;
+  grid-template-columns:50% 50% 50% ;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  padding: 1rem;
+
+ 
+}
+  footer .address-wrapper{
+    padding: 3rem;
+   display: none;
+   
+  }
+
+
+/* FOOTER SECTION ends */
+
+.revealDown{
+  z-index: 5;
+  font-size: 1rem;
+}
   .intro{
     height: 100%;
     margin-left: 2rem;
@@ -286,6 +464,7 @@ main{
    }
 .greeting-div{
   position: relative;
+  z-index: 4;
   top:40%;
   width: 100%;
 left: 4%;
@@ -299,6 +478,7 @@ margin-right: 4rem;
 }
 .greeting{
   font-size: 8rem;
+  
 }
 .greeting-div .fa-circle
 {
@@ -321,7 +501,7 @@ margin-right: 4rem;
 }
 .contact-wrapper article{
   display: flex;
-align-items: flex-start;
+  align-items: flex-start;
 
 flex-direction: column;
 width: 100%;
@@ -343,8 +523,10 @@ font-size:5rem;
   align-items: center;
   padding: 2rem;
   margin-top: 4rem;
+  z-index: 4;
 }
 .office-wrapper{
+
   background-image: url("https://images.pexels.com/photos/273671/pexels-photo-273671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   height: 100%;
   background-size: contain;
@@ -364,6 +546,7 @@ font-size:5rem;
 }
 .footer{
   height: 100vh;
+  
   display: flex;
   justify-content: space-between;
  width: 100%;
@@ -386,7 +569,7 @@ font-size:5rem;
   align-items: center;
   list-style-type: none;
   position: relative;
-  z-index: 2;
+ 
 
 }
 .footer .links ul li{
@@ -540,11 +723,11 @@ padding-left:4rem;
   margin:0;
 }
 .link-button{
-  color:#e0e1df;
-  border-radius: 20px;
-  padding: 2%;
+  color:white;
+  font-weight: 400;
+  border-radius: 5px;
   border:1px solid #e0e1df;
-  width: 250px;
+  width: 34%;
   height:25px;
   text-decoration: none;
   transition: all 1s ease;
@@ -555,8 +738,16 @@ padding-left:4rem;
   display: flex;
   justify-content:center;
   align-items: center;
-  padding: 1.5rem 3rem;
-  background-color: #0077b6;
+  padding: 2rem 5rem;
+  background: #1b1b1b;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.link-button:hover{
+  background:blueviolet ;
+  color: #fdfdfd;
+  text-decoration: none;
 }
 
 /*
@@ -643,4 +834,87 @@ padding-left:4rem;
   .modal-footer{
     display: none;
   }
+}
+
+
+.footer{
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 80vh;
+  background: #1b1b1b;
+  color: white;
+  z-index: 3;
+}
+.footer-wrapper {
+  padding: 2rem;
+  
+}
+.wrapper{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper .wrapper h3{
+  font-size: 4rem;
+  font-weight:500 ;
+  width: 110%;
+ 
+}
+
+.footer-wrapper .wrapper p{
+  font-size: 1.2rem;
+  font-weight:400 ;
+ 
+  color: gray;
+}
+.footer-wrapper .wrapper h4{
+  font-size: 2rem;
+  font-weight:400 ;
+  
+  
+}
+
+.address-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+
+  justify-items: end;
+}
+.address-wrapper h6{
+  font-weight: 600;
+}
+
+.address-wrapper a{
+ text-decoration: none;
+ color: #FAFAFAFA;
+
+}
+.address-wrapper .pagesLink 
+{
+  
+  font-size: 1.2rem;
+  
+  gap: 1rem;
+}
+.address-wrapper .pagesLink a
+{
+  line-height: 2rem;
+  font-size: 1.2rem;
+  color: #fafafa;
+}
+.address-wrapper .navigations  a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  line-height: 2rem;
+  font-size: 1.2rem;
+ 
+}
+
+address{
+  color: grey;
 }

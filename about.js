@@ -52,7 +52,20 @@ $('.leadership-wrapper').on({
     $('.drag-indicator').fadeOut(300)
   }
 });
-
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3.2,
+  spaceBetween: 30,
+  infinite: true,
+  reverseDirection:true,
+  grabCursor: true,
+  autoplay: {
+    delay: 4000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 var toggleBtn = document.querySelector(".toggleBtn");
 var menu = document.querySelector(".menu");
 var tl= new TimelineMax({paused:true});
@@ -87,7 +100,7 @@ let tickerSpeed = 2;
 
 let flickity = null;
 let isPaused = false;
-const slideshowEl = document.querySelector('.js-slideshow');
+// const slideshowEl = document.querySelector('.js-slideshow');
 
 
 //
@@ -103,7 +116,7 @@ const update = () => {
     flickity.updateSelectedSlide();
     flickity.settle(flickity.x);
   }
-  window.requestAnimationFrame(update);
+ // window.requestAnimationFrame(update);
 };
 
 const pause = () => {
@@ -123,37 +136,104 @@ const play = () => {
 //
 //////////////////////////////////////////////////////////////////////
 
-flickity = new Flickity(slideshowEl, {
-  autoPlay: false,
-  prevNextButtons: true,
-  pageDots: false,
-  draggable: true,
-  wrapAround: true,
-  selectedAttraction: 0.015,
-  friction: 0.25
-});
-flickity.x = 0;
+// flickity = new Flickity(slideshowEl, {
+//   autoPlay: false,
+//   prevNextButtons: true,
+//   pageDots: false,
+//   draggable: true,
+//   wrapAround: true,
+//   selectedAttraction: 0.015,
+//   friction: 0.25
+// });
+// flickity.x = 0;
+paceOptions = {
+  ajax: true,
+  document: true,
+  eventLag: false,
+  restartOnRequestAfter: false,
+  restartOnPushState: false
+};
+Pace.on('done', function() {
+  $('.p').delay(500).animate({
+      top: '30%',
+      opacity: '0'
+  }, 3000, $.bez([0.19, 1, 0.22, 1]));
 
+
+  $('#preloader').delay(1500).animate({
+      top: '-100%'
+  }, 2000, $.bez([0.19, 1, 0.22, 1]));
+
+
+});
 
 //
 //   Add Event Listeners
 //
 //////////////////////////////////////////////////////////////////////
 
-slideshowEl.addEventListener('mouseenter', pause, false);
-slideshowEl.addEventListener('focusin', pause, false);
-slideshowEl.addEventListener('mouseleave', play, false);
-slideshowEl.addEventListener('focusout', play, false);
+// slideshowEl.addEventListener('mouseenter', pause, false);
+// slideshowEl.addEventListener('focusin', pause, false);
+// slideshowEl.addEventListener('mouseleave', play, false);
+// slideshowEl.addEventListener('focusout', play, false);
 
-flickity.on('dragStart', () => {
-  isPaused = true;
-});
+// flickity.on('dragStart', () => {
+//   isPaused = true;
+// });
 
 
 //
 //   Start Ticker
 //
 //////////////////////////////////////////////////////////////////////
+// document.addEventListener('DOMContentLoaded', function(event) {
+
+//   const cardsFront = document.querySelectorAll('.fflip-card-btn-turn-to-front');
+//   cardsFront.forEach((card) =>{
+//     card.style.visibility = 'visible';
+//   })
+
+//   const cardsBack = document.querySelectorAll('.flip-card-btn-turn-to-back');
+//   cardsBack.forEach((card) =>{
+//     card.style.visibility = 'visible';
+//   })
+
+//   cardsFront.forEach((card) =>{
+//     card.onclick=()=>{
+//       card.classList.toggle('do-flip');
+//       console.log('i am clickable')
+//     } 
+//   });
+
+//   cardsBack.forEach((card) =>{
+//     card.onclick=()=>{
+//       card.classList.toggle('do-flip');
+//       console.log('i am clickable')
+//     } 
+//   })
+
+
+// //   // document.getElementById('flip-card-btn-turn-to-back').style.visibility = 'visible';
+// //   // document.getElementById('flip-card-btn-turn-to-front').style.visibility = 'visible';
+
+// //   // document.getElementById('flip-card-btn-turn-to-back').onclick = function() {
+// //   // document.getElementById('flip-card').classList.toggle('do-flip');
+// //   // };
+
+// //   // document.getElementById('flip-card-btn-turn-to-front').onclick = function() {
+// //   // document.getElementById('flip-card').classList.toggle('do-flip');
+// //   // };
+
+//  });
+
+
+const cardsFront = document.querySelectorAll('.flip-card-btn-turn-to-front');
+
+cardsFront.forEach((card)=>{
+ card.addEventListener('click', ()=>{
+  console.log('I am clickable')
+ })
+})
 
 update();
 gsap.registerPlugin(ScrollTrigger);

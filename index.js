@@ -100,19 +100,27 @@ var images = [];	// Images Array
 var time = 500;	// Time Between Switch
 	 
 // Image List
-images[0] = "./muriel2-removebg-preview.png";
-images[1] = "./tshenolo-removebg-preview.png";
-images[2] = "./Thandi-one-removebg-preview (1).png";
-images[3] = "./shudu2-removebg-preview.png";
-images[4] = "./tsiko-removebg-preview.png";
-images[5] = "./masi-removebg-preview (1) (1).png";
-images[6] = "./phindile-removebg-preview (2).png";
-images[7] = "./njabulo-removebg-preview.png";
-images[8] = "./lunga-one-removebg-preview (1).png";
-images[9] = "./james-removebg-preview (1) (1).png";
+images[0] = "./Muriel.png";
+images[1] = "./Phindile 2.png";
+images[2] = "./Linda nobg.png";
 
 
 
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3.2,
+  play:true,
+  infinite: true,
+  reverseDirection:true,
+  spaceBetween: 30,
+  grabCursor: true,
+  autoplay: {
+    delay: 4000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 // Change Image
 function changeImg(){
 	document.slide.src = images[i];

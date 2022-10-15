@@ -1,0 +1,160 @@
+<section class="snapshot-wrapper">
+  <div class="card box revealUp ">
+      <div class="card-body">
+        <h5 class="card-title">PEOPLE</h5>
+        <H3 data-count="39" class="plus">0</H3>
+        <p class="card-text">We're a world-class team of diverse individuals who are here to do great work as well as be great to work with.</p>  
+      </div>
+    </div>
+
+
+
+<div class="card box revealUp">
+  <div class="card-body">
+    <h5 class="card-title">PARTNERS</h5>
+    <h3 data-count="12">0</h3>
+    <p class="card-text"> We have partnered up with several reputational organizations across the world  to ensure we delivering the best solutions for our clients</p>
+    
+  </div>
+</div>
+
+<div class="card box revealUp ">
+  <div class="card-body">
+    <h5 class="card-title">PATENTS</h5>
+    <h3 data-count="26">0</h3>
+    <p class="card-text">We have 26 local and international patents.</p>
+
+  </div>
+</div>
+
+<div class="card box revealUp ">
+  <div class="card-body">
+    <h5 class="card-title">SERVICES</h5>
+    <h3 data-count="6">0</h3>
+    <p class="card-text"> Strategy. Brand Experience. Digital Experience. Content. Technology. Energy. We build solutions that matter regardless of field.</p>
+
+  </div>
+</div>
+<div class="card box revealUp ">
+      <div class="card-body">
+        <h5 class="card-title">EXPERIENCE</h5>
+        <h3 data-count="50" class="ha">0</h3>
+        <p class="card-text">we have a team of quick-thinking experts who have 50 years of combined experience to apply a personalized approach to each job, offering you digital solutions that help your brand stand out from the crowd.</p>
+      </div>
+    </div>
+
+</section>
+<section class="expertise">
+<div class="marquee">
+<div class="track">
+<div class="content">&nbsp;OUR  &nbsp; &nbsp; EXPERTISE &nbsp; &nbsp;OUR &nbsp; &nbsp;EXPERTISE</div>
+
+</div>
+
+</div>
+<div class="p-wrapper">
+
+</div>
+<article class="list-wrapper" style="  background-color:#e0e1df;">
+<ul class="list-group revealUp list-group-flush" style="  background-color:#e0e1df;">
+<li class="list-group-item item-heading" style="  background-color:#e0e1df;">Artificial Intelligence</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Machine Learning</li>
+
+<li class="list-group-item" style="  background-color:#e0e1df;">Cognitive Analytics</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Neural Networks</li>
+<li class="list-group-item"style="  background-color:#e0e1df;">Algorithm intelligence</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Robotics</li>
+</ul>
+<ul class="list-group revealUp  list-group-flush">
+<li class="list-group-item item-heading" style="  background-color:#e0e1df;">Development</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Custom Website Development</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">eCommerce Development</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Quality assurance</li>
+
+<li class="list-group-item" style="  background-color:#e0e1df;">Mobile app development</li>
+</ul>
+<ul class="list-group revealUp  list-group-flush">
+<li class="list-group-item item-heading" style="  background-color:#e0e1df;">Design</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">UX Design</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Technical direction</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Product analysis</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Multi-platform wireframes</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Content Generation</li>
+
+</ul>
+<ul class="list-group revealUp  list-group-flush">
+<li class="list-group-item item-heading"style="  background-color:#e0e1df;" >Cloud Services</li>
+<li class="list-group-item"style="  background-color:#e0e1df;" >Cloud based solutions</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Data Management Services</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Data Science</li>
+<li class="list-group-item" style="  background-color:#e0e1df;">Concept Analysis</li>
+</ul>
+
+
+</article>
+
+</section>
+<section class="process">
+<div class="marquee">
+<div class="track">
+<div class="content">&nbsp;OUR  &nbsp; &nbsp; PROCESS &nbsp; &nbsp;OUR &nbsp; &nbsp;PROCESS</div>
+
+</div>
+
+</div>
+<article class="card-wrapper">
+<div class="card-container">
+<p class="count-title"><span>01</span>  &nbsp;&nbsp;  On your mark</p>
+<div class="card" style="  background-color:#e0e1df;">
+<img class="card-img-top revealUp" src="./Cube_Super_Rounded0000.png" alt="Card image cap">
+<div class="card-body">
+<p >We work with an integral vision. We understand your business, set a 
+goal and define a clear aim that will guide us throughout the project.</p>
+</div>
+</div>
+</div>
+<div class="card-container">
+<p class="count-title"><span>02</span> &nbsp;&nbsp;  Get set</p>
+<div class="card"style="  background-color:#e0e1df;">
+  <img class="card-img-top revealUp" src="./Cylinder_X4_-_Thick0000.png" alt="Card image cap">
+  <div class="card-body">
+  <p>
+ We analyse the context 
+    where the product or
+    brand will interact and 
+    define possible scenarios. 
+</p>
+  </div>
+</div>
+</div>
+<div class="card-container">
+<p class="count-title"><span>03</span> &nbsp;&nbsp;  Ready</p>
+<div class="card" style="  background-color:#e0e1df;">
+  <img class="card-img-top revealUp" src="./Pyramid_1_-_Tall0000.png" alt="Card image cap">
+  <div class="card-body">
+    <p class="c-process__card--text tu white">
+     We define the best 
+      communication strategy 
+      to engage and reach the 
+      audience.
+  </p>
+  </div>
+</div>
+</div>
+<div class="card-container">
+
+<p class="count-title"><span>04</span> &nbsp;&nbsp;  Go</p>
+<div class="card" style="  background-color:#e0e1df;">
+  <img class="card-img-top revealUp" src="./Sphere0000.png" alt="Card image cap">
+  <div class="card-body">
+    <p class="c-process__card--text tu white">
+      Through design, 
+      technology and metrics 
+    we transform the business to reach <br>
+      the goals.
+  </p>
+  </div>
+</div>
+</div>
+</article>
+</section>
