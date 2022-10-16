@@ -1101,7 +1101,7 @@ section{
 
   .about-section .about-wraps h2{
     width: 100%;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 2rem;
     
   }
@@ -1143,6 +1143,7 @@ section{
   font-size:2rem;
   width: 100%;
   margin-left: 2%;
+  font-weight: 400;
 }
 
 .swiper {
@@ -1200,6 +1201,7 @@ section{
   width: 100%;
   font-size: 2rem;
   margin-left:   1rem;
+  font-weight: 400;
 }
 
 .partners-box .card img{
