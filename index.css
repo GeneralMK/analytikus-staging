@@ -1060,7 +1060,7 @@ section{
   
 
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   gradient-container {
     width: 10vw;
     height: 10vh;
@@ -1092,6 +1092,7 @@ section{
   .about-section .about-wraps h2{
     width: 100%;
    font-weight: 500;
+   font-size: 2rem;
     
   }
 
@@ -1195,7 +1196,7 @@ section{
   width: 100%;
 }
 .partners-box .card{
-  height:30%;
+  height:50%;
 }
 /*Trusted Partners section end*/
 

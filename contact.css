@@ -304,7 +304,7 @@ margin-top: 2rem;
   
  
 
- @media only screen and (max-width: 600px){
+ @media only screen and (max-width: 900px){
   /* FOOTER SECTION STARTS */
 footer .footer{
   justify-content: center;
@@ -756,7 +756,7 @@ padding-left:4rem;
 * mobile views
 */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .greeting{
     font-size: 2rem;
     margin-left: -12px;
@@ -864,13 +864,13 @@ padding-left:4rem;
  
 }
 
-@media screen and (max-width: 1920px)
+/* @media screen and (max-width: 1920px)
 {
   .greeting{
     font-size: 6rem;
     
   }
-}
+} */
 
 .footer-wrapper .wrapper p{
   font-size: 1.2rem;
