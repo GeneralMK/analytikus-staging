@@ -106,7 +106,7 @@ address{
     z-index: 99;
     border-radius: 1em;
     position: relative;
-    z-index: 1;
+  
     backdrop-filter: blur(60px);
     border: solid 2px transparent;
     background-clip: padding-box;

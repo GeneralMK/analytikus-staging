@@ -89,6 +89,7 @@ tl.from(".menu li", 1.6,{
 tl.reverse();
 toggleBtn.onclick = function(){
  tl.reversed(!tl.reversed())
+ console.log('I am clickable')
 }
 //
 //   Variables
@@ -226,7 +227,20 @@ Pace.on('done', function() {
 
 //  });
 
+document.addEventListener('DOMContentLoaded', function(event) {
 
+  document.getElementById('flip-card-btn-turn-to-back').style.visibility = 'visible';
+  document.getElementById('flip-card-btn-turn-to-front').style.visibility = 'visible';
+
+  document.getElementById('flip-card-btn-turn-to-back').onclick = function() {
+  document.getElementById('flip-card').classList.toggle('do-flip');
+  };
+
+  document.getElementById('flip-card-btn-turn-to-front').onclick = function() {
+  document.getElementById('flip-card').classList.toggle('do-flip');
+  };
+
+});
 const cardsFront = document.querySelectorAll('#flip-card-btn-turn-to-front');
 
 cardsFront.forEach((card)=>{
