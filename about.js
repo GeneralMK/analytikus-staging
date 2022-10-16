@@ -227,7 +227,7 @@ Pace.on('done', function() {
 //  });
 
 
-const cardsFront = document.querySelectorAll('.flip-card-btn-turn-to-front');
+const cardsFront = document.querySelectorAll('#flip-card-btn-turn-to-front');
 
 cardsFront.forEach((card)=>{
  card.addEventListener('click', ()=>{

@@ -106,14 +106,14 @@ gradient-backdrop {
 
 .toggleBtn{
   display: inline-block;
-width: 60px;
-height: 60px;
+width: 55px;
+height: 55px;
 padding:22px 25px;
 
 position: fixed;
 background:#2b2b2b;
 
-margin-top:5%;
+margin-top:4%;
 margin-left:2%;
 z-index: 10;
 border-radius:50%;
@@ -121,6 +121,8 @@ cursor: pointer;
 display: flex;
 justify-content: center;
 align-items: center;
+opacity: 1;
+transition: all .8s ease;
     }
     .menu-icon, .close-icon{
       filter: brightness(0) invert(1);
@@ -844,11 +846,11 @@ padding-left:4rem;
   height: 80vh;
   background: #1b1b1b;
   color: white;
-  z-index: 3;
+  
 }
 .footer-wrapper {
   padding: 2rem;
-  
+  z-index: 9;
 }
 .wrapper{
   flex-direction: column;
@@ -856,10 +858,18 @@ padding-left:4rem;
   justify-content: space-between;
 }
 .footer-wrapper .wrapper h3{
-  font-size: 4rem;
-  font-weight:500 ;
+  font-size: 3rem;
+  font-weight:400 ;
   width: 110%;
  
+}
+
+@media screen and (max-width: 1920px)
+{
+  .greeting{
+    font-size: 6rem;
+    
+  }
 }
 
 .footer-wrapper .wrapper p{
