@@ -1063,7 +1063,7 @@ section{
 @media only screen and (max-width: 900px) {
   #preloader{
     width:100%;
-    height:94vh;
+    height:92vh;
     background:#333;
     overflow:hidden;
     position:fixed;
