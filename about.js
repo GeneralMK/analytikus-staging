@@ -233,21 +233,29 @@ document.addEventListener('DOMContentLoaded', function(event) {
   document.getElementById('flip-card-btn-turn-to-front').style.visibility = 'visible';
 
   document.getElementById('flip-card-btn-turn-to-back').onclick = function() {
-  document.getElementById('flip-card').classList.toggle('do-flip');
+  document.getElementById('flip1').classList.toggle('do-flip');
   };
 
   document.getElementById('flip-card-btn-turn-to-front').onclick = function() {
-  document.getElementById('flip-card').classList.toggle('do-flip');
+  document.getElementById('flip1').classList.toggle('do-flip');
   };
 
 });
-const cardsFront = document.querySelectorAll('#flip-card-btn-turn-to-front');
 
-cardsFront.forEach((card)=>{
- card.addEventListener('click', ()=>{
-  console.log('I am clickable')
- })
-})
+  document.addEventListener('DOMContentLoaded', function(event) {
+
+  document.querySelector('#flip-card-btn-turn-to-back2').style.visibility = 'visible';
+  document.querySelector('#flip-card-btn-turn-to-front2').style.visibility = 'visible';
+
+  document.querySelector('#flip-card-btn-turn-to-back2').onclick = function() {
+  document.getElementById('flip2').classList.toggle('do-flip');
+  };
+
+  document.querySelector('#flip-card-btn-turn-to-front2').onclick = function() {
+  document.getElementById('flip2').classList.toggle('do-flip');
+  };
+
+});
 
 update();
 gsap.registerPlugin(ScrollTrigger);
