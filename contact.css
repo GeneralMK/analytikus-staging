@@ -10,9 +10,7 @@ html {
 html {
   --color: transparent;
 }
-body{
-   background-color:#e0e1df;
-}
+
 :root {
   --color-1: #158aff;
   --color-2: #fffff;
@@ -20,10 +18,10 @@ body{
   --color-4: #fffff;
   --blur: blur(100vw);
 }
-/* .revealDown{
-  z-index: 5;
+.revealDown{
+  z-index: 10;
   font-size: 2rem;
-} */
+}
 gradient-container {
   width: 100vw;
   height: 100vh;
@@ -152,7 +150,7 @@ transition: all .8s ease;
       width:100%;
       height:100vh;
        background-color:#1F4CC8;
-      z-index: 10;
+      z-index: 12;
       transform: scale(0);
       transform-origin: top left;
       display: flex;
@@ -275,7 +273,7 @@ header{
  
 
  @media only screen and (max-width: 900px){
-  /* FOOTER SECTION STARTS */
+    /* FOOTER SECTION STARTS */
 footer .footer{
   justify-content: center;
   align-items: center;
@@ -342,7 +340,7 @@ footer .address-wrapper{
 /* FOOTER SECTION ends */
 
 .revealDown{
-  z-index: 5;
+  z-index: 10;
   font-size: 1rem;
 }
   .intro{
@@ -505,7 +503,7 @@ font-size:5rem;
   background-position: center;
   background-repeat: no-repeat;
   filter: invert(35%) sepia(99%) saturate(30%) hue-rotate(180deg) brightness(85%) contrast(101%);
- 
+ z-index: 9;
 }
 .office p{
   font-size: 4rem;

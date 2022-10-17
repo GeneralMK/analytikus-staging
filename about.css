@@ -146,6 +146,7 @@ gradient-backdrop {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
+  transform: scale(1)
 }
 
 .flip-card-3D-wrapper {
@@ -335,7 +336,7 @@ opacity: 0;
   height:100vh;
 
   background-color: #1F4CC8;
-  z-index: 9;
+  z-index: 18;
   transform: scale(0);
   transform-origin: top left;
   display: flex;
@@ -962,19 +963,29 @@ margin: 0 auto;
     padding: 6rem 8rem;
 }
 
-.card-title1, .card-title, .para-wrapper{
+.card-title, .para-wrapper{
   display: flex;
   align-items: center;
   gap: 4rem;
  
 }
-
-
-.card-title1 h3, .card-title h3{
+.card-wrapper .card1 .card-title1 h3{
+  width: 100%;
+font-size: 3rem;
+display: flex;
+flex-direction: column;
+align-items: end;
+padding: 1rem;
+}
+.card-title1, .card-title2{
+  display: flex;
+  align-items: center;
+}
+ .card-title2 h3, .card-title h3{
   font-size: 3rem;
 }
 
-.card-title1 span, .card-title span{
+.card-title1 span,.card-title2 span, .card-title span{
   font-size: 2rem;
   font-weight: bolder;
   font-family: 'Noto Sans', sans-serif;
@@ -993,27 +1004,14 @@ font-size: 2rem;;
 }
 
 @media screen and (max-width: 900px){
-  footer{
-    font-size: 1rem;
+  .footer{
+   
   }
-  footer .footer{
-    font-size: 2rem;
-    
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 100%;
-    height: 80vh;
-    background: #1b1b1b;
-    color: white;
-    padding: 1rem;
-  }
-  footer .footer-wrapper h3 {
-    padding-right: 13rem;
-    width: 100%;
-    font-size: 1rem;
-    display: none;
-  }
+ .footer .footer-wrapper .wrapper h3{
+  font-size: 1rem;
+  font-weight: 400;
+  width: 1200%;
+ }
 
   footer .address-wrapper .our, 
   footer .address-wrapper .navigations, footer .address-wrapper .folo {
@@ -1087,6 +1085,7 @@ font-size: 2rem;;
     width: 240px; height: 240px; border-radius: 15rem; background: radial-gradient(77.73% 77.73% at 98.52% 96.25%, #F98BDA 0%, rgba(128, 76, 239, 0.29) 50.52%, rgba(91, 216, 216, 0) 100%), radial-gradient(141.73% 105.23% at 50% -7.16%, #E1F8FF 0%, rgba(160, 198, 255, 0) 50.73%, rgba(162, 147, 255, 0) 100%), radial-gradient(112.27% 48.54% at 1.59% 50%, rgba(255, 130, 227, 0.5) 0%, rgba(255, 123, 234, 0.095) 53.91%, rgba(254, 216, 255, 0) 100%), linear-gradient(153.07deg, #8177F3 6.37%, rgba(255, 230, 166, 0) 83.82%); background-blend-mode: normal, normal, normal, normal, normal, normal; filter: blur(50px);
   }
   .snapshot-wrapper{
+    height: 100vh;
     height: 100%;
     display: grid;
     grid-template-columns: 100%;
@@ -1094,6 +1093,7 @@ font-size: 2rem;;
     align-items: center;
     grid-gap:4rem;
     padding: 4rem;
+  
  
 }
 .snapshot-wrapper .card{
@@ -1114,7 +1114,7 @@ font-size: 2rem;;
 }
 .snapshot-wrapper .card-body .card-text{
 font-size: 11px;
-display: none;
+
 width: 100%;
 
 }
@@ -1190,6 +1190,9 @@ background-color:#e0e1df;
 
 
   /*Process Section Starts*/
+  .processes {
+    margin-top: 23rem ;
+  }
   .processes .card-wrapper{
     display: grid;
     grid-template-columns: 100%;
@@ -1249,9 +1252,15 @@ background-color:#e0e1df;
    font-weight: bolder;
    font-family: 'Noto Sans', sans-serif;
  }
+ .leadership-section {
+ 
+
+ }
 
  .leadership-section{
   height: 230vh;
+  
+  margin-top: 34rem;
 
 }
 
@@ -1259,7 +1268,7 @@ background-color:#e0e1df;
   
     width: 210%;
     height: 100%;
-    
+    z-index: 12;
     -o-perspective: 900px;
     -webkit-perspective: 900px;
     -ms-perspective: 900px;
@@ -1275,10 +1284,7 @@ background-color:#e0e1df;
     overflow: hidden;
   
   }
-  .leadership-section{
-    height: 1000vh;
-    z-index: 99;
-  }
+  
   .leadership-section .leader-wrapper p {
     width: 100%;
   }
