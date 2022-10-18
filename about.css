@@ -1437,6 +1437,9 @@ background-color:#e0e1df;
     overflow: hidden;
   
   }
+  .leadership-section .leader-wrapper h2{
+    font-size: 2rem;
+  }
   
   .leadership-section .leader-wrapper p {
     width: 100%;
