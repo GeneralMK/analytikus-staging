@@ -993,7 +993,7 @@ padding: 1rem;
 
 
 .count-title{
-font-size: 2rem;;
+font-size: 2rem;
 }
 .count-title span{
   font-size: .9rem;
@@ -1002,7 +1002,163 @@ font-size: 2rem;;
   opacity: 1;
   visibility: hidden;
 }
+@media screen and (max-width: 1024px){
+  .footer .footer-wrapper .wrapper h3{
+    font-size: 2rem;
+    font-weight:500 ;
+    width: 1900%;
+   }
 
+   
+  .about-section .about-wrapper h2{
+    width: 100%;
+   font-weight: 400;
+    font-size:4rem ;
+  }
+
+  .processes .process-header h2{
+    width: 100%;
+    font-weight: 400;
+    font-size: 4rem;
+  }
+
+  .processes .card-wrapper .card{
+    background: rgba(255,255,255, 0.2);
+    border-radius: 1em;
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    padding:1rem 2rem;
+  }
+  .processes .card-title1 h3,.processes  .card-title h3{
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .processes {
+    margin-top: 1rem ;
+  }
+
+  .leadership-section .profiles-wrapper .flip-card-3D-wrapper {
+  
+    width: 210%;
+    height: 100%;
+    z-index: 12;
+    
+  
+  }
+  
+  .leadership-section .leader-wrapper h2 {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  .profiles-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 50%;
+    
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .flip-card-3D-wrapper {
+    
+    width: 380px;
+    height: 550px;
+    position: relative;
+    -o-perspective: 900px;
+    -webkit-perspective: 900px;
+    -ms-perspective: 900px;
+    perspective: 900px;
+    margin: 0 auto;
+    gap: 34;
+    
+    overflow:hidden;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    
+  
+  }
+  #flip-card {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+  
+    position: absolute;
+    -o-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    -o-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+   
+  }
+  .do-flip {
+    -o-transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  #flip-card-btn-turn-to-back, #flip-card-btn-turn-to-front {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    cursor: pointer;
+    visibility: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: .7em;
+    padding: 0;
+    color: grey;
+    border: 1px solid grey;
+  }
+  #flip-card .flip-card-front, #flip-card .flip-card-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -o-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2;
+    -webkit-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+    -moz-box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+    box-shadow: 5px 6px 32px 2px rgba(133,133,133,0.71);
+  }
+  #flip-card .flip-card-front {
+      
+      width: 100%;
+      height: 100%;
+  }
+  #flip-card .flip-card-back {
+      
+      border: 1px solid grey;
+      -o-transform: rotateY(180deg);
+      -webkit-transform: rotateY(180deg);
+      -ms-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(30px);
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+  }
+  #flip-card .flip-card-front p, #flip-card .flip-card-back p {
+    color: grey;
+    display: block;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+  }
+  
+}
 @media screen and (max-width: 900px){
   .footer{
    
@@ -1221,8 +1377,8 @@ background-color:#e0e1df;
   margin-left: -1rem;
 }
 .processes .card-title1 h3,.processes  .card-title h3{
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
 }
  .card .para-wrapper p{
    display: flex;
@@ -1248,14 +1404,11 @@ background-color:#e0e1df;
  }
 
  .card-title1 span, .card-title span{
-   font-size: 1.2rem;
+   font-size: 12px;
    font-weight: bolder;
    font-family: 'Noto Sans', sans-serif;
  }
- .leadership-section {
- 
 
- }
 
  .leadership-section{
   height: 230vh;
@@ -1546,9 +1699,7 @@ background-color:#e0e1df;
     padding-top: 29rem;
     
   }
-.leader-wrapper p{
-   
-}
+
 .leader-wrapper h2{
   width: 100%;  
   font-size: 3rem;

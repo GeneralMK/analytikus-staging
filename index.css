@@ -147,7 +147,7 @@ gradient-container {
   display: flex;
   background: var(--color-2);
   transform: translate(-50%, -50%);
-  opacity: .8;;
+  opacity: .6;;
   flex-wrap: wrap;
   overflow: hidden;
   position: fixed;
@@ -1060,7 +1060,175 @@ section{
   
 
 }
+
+@media screen and (max-width: 1024px){
+  .slogan{
+    font-size: 5rem;
+    width:80%;
+    padding: 1rem;
+    font-weight: 400;
+  }
+
+  /* About section start */
+  .about-section .about-wraps{
+    padding: 4rem;
+    width: 100%;
+  }
+
+  .about-section .about-wraps h2{
+    width: 100%;
+   font-weight: 400;
+   font-size: 5rem;
+    
+  }
+
+  .about-section .about-wraps p{
+   
+   font-weight: 400;
+   font-size: 1.2rem;
+    
+  }
+
+  .link-button{
+    color:white;
+    font-weight: 400;
+    border-radius: 5px;
+    border:1px solid #e0e1df;
+    width: 50%;
+    height:25px;
+    text-decoration: none;
+    transition: all 1s ease;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+   margin-top: 2rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 2rem 5rem;
+    background: #1b1b1b;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+/* About section end */
+/* Services section Start */
+
+.services .services-wrap .swiper{
+  z-index: 19;
+}
+.services .services-wrap, 
+.vision-box .vission{
+  padding: 1rem;
+}
+.services .services-wrap h2{
+
+  font-size:5rem;
+  width: 100%;
+  margin-left: 2%;
+  font-weight: 400;
+  
+}
+
+.swiper {
+  width: 50rem;
+  height: 50rem;
+  
+}
+
+.swiper-wrapper .card .card-wrapper-img h3{
+  font-size: 18px;
+  font-weight: 600;
+}
+.swiper-wrapper .card  p{
+  font-size: 16px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+ 
+  z-index:999;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-wrapper .card
+{
+  
+  height: 80vh;
+  z-index: 10;
+}
+
+.vision-box .vission{
+  padding: 1rem;
+  width: 100%;
+}
+.vision-box  .vission  h2{
+  font-weight: 400;
+ 
+  width: 100%;
+}
+.vision-box  .vission  p{
+  padding-left: 1rem;
+}
+/* Services section End */
+/*Trusted Partners section starts*/
+.partners-box
+{
+  padding: 1rem;
+}
+
+.partners-box .trusted-wrapper h2
+{
+  width: 100%;
+  font-size: 5rem;
+  margin-left:   1rem;
+  font-weight: 400;
+}
+
+.partners-box .card img{
+  width: 100%;
+}
+.partners-box .card{
+  height:50vh;
+}
+/*Trusted Partners section end*/
+
+/*Leadership*/
+.team-wrapper .inner .imgSlide{
+  width: 100%;
+  top: 20%;
+}
+/*Leadership ends*/
+  
+footer .footer-wrapper .wrapper h3{
+  font-size: 2rem;
+  font-weight:500 ;
+  width: 1900%;
+ 
+}
+
+
+
+}
 @media only screen and (max-width: 900px) {
+  .swiper-wrapper .card .card-wrapper-img h3{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .swiper-wrapper .card  p{
+    font-size: 16px;
+  }
   #preloader{
     width:100%;
     height:92vh;
@@ -1175,7 +1343,12 @@ section{
   -webkit-align-items: center;
   align-items: center;
 }
-
+.swiper-wrapper .card
+{
+  
+  height: 50vh;
+  z-index: 10;
+}
 .vision-box .vission{
   padding: 1rem;
   width: 100%;
