@@ -471,7 +471,7 @@ nav ul li a{
   color: #fdfdfd;
 }
 .leadership-wrapper{
-margin-top: 4rem;
+
 justify-content: left;
 align-items: flex-start;
 position: relative;
@@ -1039,13 +1039,34 @@ font-size: 2rem;
   .processes {
     margin-top: 1rem ;
   }
-
+  .leadership-section{
+    margin-top: 3rem;
+  
+  }
+  .leadership-section{
+    
+  }
+  img{
+    width: 120%;
+  }
   .leadership-section .profiles-wrapper .flip-card-3D-wrapper {
   
-    width: 210%;
-    height: 100%;
-    z-index: 12;
-    
+      
+    width: 300px;
+    height: 550px;
+    position: relative;
+    -o-perspective: 900px;
+    -webkit-perspective: 900px;
+    -ms-perspective: 900px;
+    perspective: 900px;
+    margin: 0 auto;
+    gap: 34;
+    overflow:hidden;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    z-index: 99999;
   
   }
   
@@ -1056,15 +1077,13 @@ font-size: 2rem;
   .profiles-wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    width: 50%;
-    
     gap: 2rem;
     padding: 2rem;
   }
   .flip-card-3D-wrapper {
     
-    width: 380px;
-    height: 550px;
+    width: 80px;
+    height: 50px;
     position: relative;
     -o-perspective: 900px;
     -webkit-perspective: 900px;
@@ -1072,7 +1091,6 @@ font-size: 2rem;
     perspective: 900px;
     margin: 0 auto;
     gap: 34;
-    
     overflow:hidden;
     background: transparent;
     backdrop-filter: blur(30px);
