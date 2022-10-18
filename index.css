@@ -1062,6 +1062,16 @@ section{
 }
 
 @media screen and (max-width: 1024px){
+  #preloader{
+    width:100%;
+    height:2vh;
+    background:#333;
+    overflow:hidden;
+    position:fixed;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    position: fixed;
+    z-index: 999999;
+  }
   .slogan{
     font-size: 5rem;
     width:80%;
