@@ -147,7 +147,7 @@ gradient-container {
   display: flex;
   background: var(--color-2);
   transform: translate(-50%, -50%);
-  opacity: .6;;
+  opacity: .5;;
   flex-wrap: wrap;
   overflow: hidden;
   position: fixed;
@@ -212,6 +212,7 @@ gradient-backdrop {
 .gradient2{
   top: 70%;
   left: 30%;
+  opacity: 0.5;
 }
 
 

@@ -87,6 +87,7 @@ gradient-backdrop {
 .gradient2{
   top: 70%;
   left: 30%;
+  opacity: 0.5;
 }
 
 .about-section{
